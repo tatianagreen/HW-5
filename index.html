@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--1 "Counter"-->
+  	<label>1) Counter</label><br>
+	<div class="counter">
+            <button class="counter__btn" data-direction="minus">-</button>
+            <input type="text" value="0" class="counter__value" disabled>
+            <button class="counter__btn" data-direction="plus">+</button>
+    </div>
+
+	<br>
+	<br>
+
+<!--2 "Calculator"-->
+  	<label>2) Calculator</label><br>
+	<input id="num1" />
+	<div id="operator_btns">
+	  <button id="plus" onclick="op='+'">+</button>
+	  <button id="minus" onclick="op='-'">-</button>
+	  <button id="times" onclick="op='*'">x</button>
+	  <button id="divide" onclick="op='/'">:</button>
+	</div>
+	<input id="num2" />
+	<br>
+	<button onclick="func()">=</button>
+	<p id="result"></p>
+
+<!--3."Click me button"-->
+  	<label>3)</label><br>
+	<button id="myButton">Click me</button>
+    <p id="outputText"></p>
+
+
+</body>
+<script src="app.js"></script>
+
+</html>
